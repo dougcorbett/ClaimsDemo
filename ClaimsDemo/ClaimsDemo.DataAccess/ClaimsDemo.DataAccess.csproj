@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71D7FACB-AD7B-474E-AE29-A2C108C85EEA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClaimsDemo.DataAccess</RootNamespace>
+    <AssemblyName>ClaimsDemo.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MongoRepository.cs" />
+    <Compile Include="POCO\Claim.cs" />
+    <Compile Include="POCO\ClaimAdmission.cs" />
+    <Compile Include="POCO\ClaimCondition.cs" />
+    <Compile Include="POCO\ClaimDischarge.cs" />
+    <Compile Include="POCO\ClaimDocumentControlNumber.cs" />
+    <Compile Include="POCO\ClaimEmployerName.cs" />
+    <Compile Include="POCO\ClaimExternalCauseOfInjury.cs" />
+    <Compile Include="POCO\ClaimICDDiagnosisCode.cs" />
+    <Compile Include="POCO\ClaimICDProcedureCode.cs" />
+    <Compile Include="POCO\ClaimInsured.cs" />
+    <Compile Include="POCO\ClaimOccurence.cs" />
+    <Compile Include="POCO\ClaimOccurenceSpan.cs" />
+    <Compile Include="POCO\ClaimPatient.cs" />
+    <Compile Include="POCO\ClaimPayer.cs" />
+    <Compile Include="POCO\ClaimPhysician.cs" />
+    <Compile Include="POCO\ClaimProvider.cs" />
+    <Compile Include="POCO\ClaimProviderPayTo.cs" />
+    <Compile Include="POCO\ClaimReasonForVisit.cs" />
+    <Compile Include="POCO\ClaimResponsibleParty.cs" />
+    <Compile Include="POCO\ClaimServiceLine.cs" />
+    <Compile Include="POCO\ClaimTreatmentAuthCode.cs" />
+    <Compile Include="POCO\ClaimValueCode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLRepository.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
