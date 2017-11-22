@@ -53,7 +53,7 @@ namespace ClaimsDemo.UnitTests.TestClaims
                 StatusCode = 1
             };
 
-            ServiceLines = new List<ClaimServiceLine>()
+            ServiceLineList = new List<ClaimServiceLine>()
             {
                 new ClaimServiceLine()
                 {
@@ -143,7 +143,7 @@ namespace ClaimsDemo.UnitTests.TestClaims
                 }
             };
 
-            Payers = new List<ClaimPayer>()
+            PayerList = new List<ClaimPayer>()
             {
                 new ClaimPayer()
                 {
@@ -157,7 +157,7 @@ namespace ClaimsDemo.UnitTests.TestClaims
             NationalProviderIdentifier = "1234512345";
             PayerProvidedProviderID = "00099";
 
-            Insured = new List<ClaimInsured>()
+            InsuredList = new List<ClaimInsured>()
             {
                 new ClaimInsured()
                 {
@@ -169,7 +169,7 @@ namespace ClaimsDemo.UnitTests.TestClaims
                 }
             };
 
-            ICDDiagnosisCodes = new List<ClaimICDDiagnosisCode>()
+            ICDDiagnosisCodeList = new List<ClaimICDDiagnosisCode>()
             {
                 new ClaimICDDiagnosisCode() { Code = "65421"},
                 new ClaimICDDiagnosisCode() { Code = "V270"},
@@ -182,14 +182,14 @@ namespace ClaimsDemo.UnitTests.TestClaims
 
             AdmittingDiagnosisCode = "65421";
 
-            ICDProcedureCodes = new List<ClaimICDProcedureCode>()
+            ICDProcedureCodeList = new List<ClaimICDProcedureCode>()
             {
                 new ClaimICDProcedureCode() { IsPrimary = true, Code = "6564", ProcedureDate = new DateTime(2007, 8, 17) },
                 new ClaimICDProcedureCode() { IsPrimary = false, Code = "5459", ProcedureDate = new DateTime(2007, 8, 17) },
                 new ClaimICDProcedureCode() { IsPrimary = false, Code = "5759", ProcedureDate = new DateTime(2007, 8, 17) }
             };
 
-            Physicians = new List<ClaimPhysician>()
+            PhysicianList = new List<ClaimPhysician>()
             {
                 new ClaimPhysician()
                 {

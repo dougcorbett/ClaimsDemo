@@ -53,7 +53,7 @@ namespace ClaimsDemo.UnitTests.TestClaims
                 StatusCode = 1
             };
 
-            ServiceLines = new List<ClaimServiceLine>()
+            ServiceLineList = new List<ClaimServiceLine>()
             {
                 new ClaimServiceLine()
                 {
@@ -98,7 +98,7 @@ namespace ClaimsDemo.UnitTests.TestClaims
                 }
             };
 
-            Payers = new List<ClaimPayer>()
+            PayerList = new List<ClaimPayer>()
             {
                 new ClaimPayer()
                 {
@@ -112,7 +112,7 @@ namespace ClaimsDemo.UnitTests.TestClaims
             NationalProviderIdentifier = "1234512345";
             PayerProvidedProviderID = "999888";
 
-            Insured = new List<ClaimInsured>()
+            InsuredList = new List<ClaimInsured>()
             {
                 new ClaimInsured()
                 {
@@ -122,7 +122,7 @@ namespace ClaimsDemo.UnitTests.TestClaims
                 }
             };
 
-            ICDDiagnosisCodes = new List<ClaimICDDiagnosisCode>()
+            ICDDiagnosisCodeList = new List<ClaimICDDiagnosisCode>()
             {
                 new ClaimICDDiagnosisCode() { Code = "311"},
                 new ClaimICDDiagnosisCode() { Code = "3008"},
@@ -132,7 +132,7 @@ namespace ClaimsDemo.UnitTests.TestClaims
 
             AdmittingDiagnosisCode = "3008";
 
-            Physicians = new List<ClaimPhysician>()
+            PhysicianList = new List<ClaimPhysician>()
             {
                 new ClaimPhysician()
                 {
