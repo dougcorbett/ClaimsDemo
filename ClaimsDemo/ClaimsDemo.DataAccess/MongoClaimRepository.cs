@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClaimsDemo.DataAccess
 {
-    public class MongoRepository
+    public class MongoClaimRepository
     {
     }
 }

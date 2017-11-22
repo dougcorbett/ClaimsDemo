@@ -26,16 +26,16 @@ namespace ClaimsDemo.DataAccess.POCO
         public List<ClaimCondition> Conditions { get; set; }
         public ClaimDischarge Discharge { get; set; }
         public List<ClaimDocumentControlNumber> DocumentControlNumbers { get; set; }
-        public ClaimEmployerName EmployerName { get; set; }
+        public List<ClaimEmployerName> EmployerNames { get; set; }
         public List<ClaimExternalCauseOfInjury> ExternalCausesOfInjury { get; set; }
         public List<ClaimICDDiagnosisCode> ICDDiagnosisCodes { get; set; }
         public List<ClaimICDProcedureCode> ICDProcedureCodes { get; set; }
-        public ClaimInsured Insured { get; set; }
+        public List<ClaimInsured> Insured { get; set; }
         public List<ClaimOccurence> Occurences { get; set; }
         public List<ClaimOccurenceSpan> OccurenceSpans { get; set; }
         public ClaimPatient Patient { get; set; }
-        public List<ClaimPayer> Payer { get; set; }
-        public List<ClaimPhysician> Physician { get; set; }
+        public List<ClaimPayer> Payers { get; set; }
+        public List<ClaimPhysician> Physicians { get; set; }
         public ClaimProvider Provider { get; set; }
         public List<ClaimReasonForVisit> ReasonsForVisit { get; set; }
         public ClaimResponsibleParty ResponsibleParty { get; set; }
@@ -49,16 +49,16 @@ namespace ClaimsDemo.DataAccess.POCO
             Conditions = new List<ClaimCondition>();
             Discharge = new ClaimDischarge();
             DocumentControlNumbers = new List<ClaimDocumentControlNumber>();
-            EmployerName = new ClaimEmployerName();
+            EmployerNames = new List<ClaimEmployerName>();
             ExternalCausesOfInjury = new List<ClaimExternalCauseOfInjury>();
             ICDDiagnosisCodes = new List<ClaimICDDiagnosisCode>();
             ICDProcedureCodes = new List<ClaimICDProcedureCode>();
-            Insured = new ClaimInsured();
+            Insured = new List<ClaimInsured>();
             Occurences = new List<ClaimOccurence>();
             OccurenceSpans = new List<ClaimOccurenceSpan>();
             Patient = new ClaimPatient();
-            Payer = new List<ClaimPayer>();
-            Physician = new List<ClaimPhysician>();
+            Payers = new List<ClaimPayer>();
+            Physicians = new List<ClaimPhysician>();
             Provider = new ClaimProvider();
             ReasonsForVisit = new List<ClaimReasonForVisit>();
             ResponsibleParty = new ClaimResponsibleParty();

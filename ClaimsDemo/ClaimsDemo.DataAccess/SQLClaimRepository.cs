@@ -8,7 +8,7 @@ using ClaimsDemo.DataAccess.POCO;
 
 namespace ClaimsDemo.DataAccess
 {
-    public class SQLRepository
+    public class SQLClaimRepository
     {
         public void Save(Claim claim)
         {

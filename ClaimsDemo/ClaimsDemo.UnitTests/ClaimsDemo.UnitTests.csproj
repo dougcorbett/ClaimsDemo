@@ -50,6 +50,14 @@
   <ItemGroup>
     <Compile Include="ClaimTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestClaimRepository.cs" />
+    <Compile Include="TestClaims\Claim002.cs" />
+    <Compile Include="TestClaims\Claim001.cs" />
+    <Compile Include="TestClaims\Claim003.cs" />
+    <Compile Include="TestClaims\Claim004.cs" />
+    <Compile Include="TestClaims\Claim005.cs" />
+    <Compile Include="TestClaims\Claim006.cs" />
+    <Compile Include="TestClaims\TestClaimsEnum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

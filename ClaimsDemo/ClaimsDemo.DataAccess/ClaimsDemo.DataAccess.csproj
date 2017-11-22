@@ -40,7 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MongoRepository.cs" />
+    <Compile Include="MongoClaimRepository.cs" />
     <Compile Include="POCO\Claim.cs" />
     <Compile Include="POCO\ClaimAdmission.cs" />
     <Compile Include="POCO\ClaimCondition.cs" />
@@ -64,7 +64,7 @@
     <Compile Include="POCO\ClaimTreatmentAuthCode.cs" />
     <Compile Include="POCO\ClaimValueCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SQLRepository.cs" />
+    <Compile Include="SQLClaimRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
