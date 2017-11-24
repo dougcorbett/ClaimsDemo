@@ -37,6 +37,24 @@ namespace ClaimsDemo.UnitTests
                 case TestClaimsEnum.Claim_006:
                     result = new Claim006();
                     break;
+                case TestClaimsEnum.Claim_007:
+                    result = new Claim007();
+                    break;
+                case TestClaimsEnum.Claim_008:
+                    result = new Claim008();
+                    break;
+                case TestClaimsEnum.Claim_009:
+                    result = new Claim009();
+                    break;
+                case TestClaimsEnum.Claim_010:
+                    result = new Claim010();
+                    break;
+                case TestClaimsEnum.Claim_011:
+                    result = new Claim011();
+                    break;
+                case TestClaimsEnum.Claim_012:
+                    result = new Claim012();
+                    break;
                 default:
                     break;
             }

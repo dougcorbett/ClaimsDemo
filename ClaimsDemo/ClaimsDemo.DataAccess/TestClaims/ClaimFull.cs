@@ -5,14 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using ClaimsDemo.DataAccess.POCO;
 
-namespace ClaimsDemo.UnitTests.TestClaims
+namespace ClaimsDemo.DataAccess.TestClaims
 {
-    public class ClaimFull: Claim
+    public class ClaimFull : Claim
     {
         public ClaimFull()
         {
 
-            PatientControlNumber = "515151";
+            PatientControlNumber = "F515151";
             MedicalRecordNumber = "998899";
             TypeOfBill = "0111";
             FederalTaxNumber = "12-3456789";
@@ -27,7 +27,7 @@ namespace ClaimsDemo.UnitTests.TestClaims
             AdmittingDiagnosisCode = "2259";
             PPSCode = "xxxhs";
             Remarks = "Some interesting remmarks";
-            
+
             Admission = new ClaimAdmission()
             {
                 StartDate = new DateTime(2007, 12, 09),
@@ -146,7 +146,8 @@ namespace ClaimsDemo.UnitTests.TestClaims
                 State = "XX",
                 Zip = "12345",
                 Phone = "9892223333",
-                PayTo = new ClaimProviderPayTo() {
+                PayTo = new ClaimProviderPayTo()
+                {
                     Name = "Billing Office",
                     StreetAddress = "444 Oak Rd.",
                     City = "Ozarks",

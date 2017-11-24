@@ -14,11 +14,11 @@ namespace ClaimsDemo.DataAccess.POCO
        public string Zip { get; set; }
        public string Phone { get; set; }
 
-       public List<ClaimProviderPayTo> PayToList { get; set; }
+       public ClaimProviderPayTo PayTo { get; set; }
 
        public ClaimProvider()
        {
-            PayToList = new List<ClaimProviderPayTo>();
+            //PayTo = new ClaimProviderPayTo();
        }
 
     }

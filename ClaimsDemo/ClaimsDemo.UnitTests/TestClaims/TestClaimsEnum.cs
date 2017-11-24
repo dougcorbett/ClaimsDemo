@@ -14,6 +14,12 @@ namespace ClaimsDemo.UnitTests.TestClaims
         Claim_003,
         Claim_004,
         Claim_005,
-        Claim_006
+        Claim_006,
+        Claim_007,
+        Claim_008,
+        Claim_009,
+        Claim_010,
+        Claim_011,
+        Claim_012
     }
 }
