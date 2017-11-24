@@ -193,6 +193,7 @@ namespace ClaimsDemo.UnitTests.TestClaims
             {
                 new ClaimPhysician()
                 {
+                    PhysicianType = "Attending",
                     NPI = "3333344444",
                     QualifierCode = "G2",
                     QualifierNumber = "535399999",

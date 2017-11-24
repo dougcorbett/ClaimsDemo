@@ -14,6 +14,7 @@ namespace ClaimsDemo.UnitTests
         public void WhenSavingAValidClaimToSQLServer_ItShouldSaveSuccessfully()
         {
 
+            SeedDatabase();
 
             // generate patient from data
 
@@ -21,13 +22,27 @@ namespace ClaimsDemo.UnitTests
 
             // patient test repo
 
-            TestClaimRepository repo = new TestClaimRepository();
+            //TestClaimRepository repo = new TestClaimRepository();
 
-            Claim claim = repo.GetClaim(TestClaimsEnum.Claim_001);
+            //Claim claim = repo.GetClaim(TestClaimsEnum.Claim_001);
 
             //Claim claim = new Claim001();
             //SQLRepository repo = new SQLRepository();
             //repo.Save(claim);
+
+        }
+
+        private void SeedDatabase()
+        {
+            SQLClaimRepository repo = new SQLClaimRepository("Server=localhost;Database=Claims;Trusted_Connection=True;");
+
+            repo.InsertClaim(new ClaimFull());
+            repo.InsertClaim(new Claim001());
+            repo.InsertClaim(new Claim002());
+            repo.InsertClaim(new Claim003());
+            repo.InsertClaim(new Claim004());
+            repo.InsertClaim(new Claim005());
+            repo.InsertClaim(new Claim006());
 
         }
     }

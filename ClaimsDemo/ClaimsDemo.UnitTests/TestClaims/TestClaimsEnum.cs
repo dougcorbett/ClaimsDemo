@@ -8,6 +8,7 @@ namespace ClaimsDemo.UnitTests.TestClaims
 {
     public enum TestClaimsEnum
     {
+        Claim_Full,
         Claim_001,
         Claim_002,
         Claim_003,

@@ -16,6 +16,9 @@ namespace ClaimsDemo.UnitTests
 
             switch (claim)
             {
+                case TestClaimsEnum.Claim_Full:
+                    result = new ClaimFull();
+                    break;
                 case TestClaimsEnum.Claim_001:
                     result = new Claim001();
                     break;

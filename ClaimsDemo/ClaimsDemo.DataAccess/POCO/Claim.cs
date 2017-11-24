@@ -45,9 +45,9 @@ namespace ClaimsDemo.DataAccess.POCO
 
        public Claim()
        {
-            Admission = new ClaimAdmission();
+            //Admission = new ClaimAdmission();
             ConditionList = new List<ClaimCondition>();
-            Discharge = new ClaimDischarge();
+            //Discharge = new ClaimDischarge();
             DocumentControlNumberList = new List<ClaimDocumentControlNumber>();
             EmployerNameList = new List<ClaimEmployerName>();
             ExternalCauseOfInjuryList = new List<ClaimExternalCauseOfInjury>();
@@ -56,12 +56,12 @@ namespace ClaimsDemo.DataAccess.POCO
             InsuredList = new List<ClaimInsured>();
             OccurenceList = new List<ClaimOccurence>();
             OccurenceSpanList = new List<ClaimOccurenceSpan>();
-            Patient = new ClaimPatient();
+            //Patient = new ClaimPatient();
             PayerList = new List<ClaimPayer>();
             PhysicianList = new List<ClaimPhysician>();
-            Provider = new ClaimProvider();
+            //Provider = new ClaimProvider();
             ReasonForVisitList = new List<ClaimReasonForVisit>();
-            ResponsibleParty = new ClaimResponsibleParty();
+            //ResponsibleParty = new ClaimResponsibleParty();
             ServiceLineList = new List<ClaimServiceLine>();
             TreatmentAuthCodeList = new List<ClaimTreatmentAuthCode>();
             ValueCodeList = new List<ClaimValueCode>();

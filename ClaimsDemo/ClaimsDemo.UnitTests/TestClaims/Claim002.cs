@@ -136,6 +136,7 @@ namespace ClaimsDemo.UnitTests.TestClaims
             {
                 new ClaimPhysician()
                 {
+                    PhysicianType = "Attending",
                     NPI = "111122222",
                     QualifierCode = "1G",
                     QualifierNumber = "UP1234",
