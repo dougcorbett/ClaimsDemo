@@ -30,19 +30,19 @@ namespace ClaimsDemo.DataAccess.MongoPOCO
         public String[] DocumentControlNumbers { get; set; }
         public String[] EmployerNames { get; set; }
         public String[] ExternalCausesOfInjury { get; set; }
-        public List<ClaimICDDiagnosisCode> ICDDiagnosisCodeList { get; set; }
-        public List<ClaimICDProcedureCode> ICDProcedureCodeList { get; set; }
-        public List<ClaimInsured> InsuredList { get; set; }
-        public List<ClaimOccurence> OccurenceList { get; set; }
-        public List<ClaimOccurenceSpan> OccurenceSpanList { get; set; }
+        public List<ClaimICDDiagnosisCode> ICDDiagnosisCodes { get; set; }
+        public List<ClaimICDProcedureCode> ICDProcedureCodes { get; set; }
+        public List<ClaimInsured> Insureds { get; set; }
+        public List<ClaimOccurence> Occurences { get; set; }
+        public List<ClaimOccurenceSpan> OccurenceSpans { get; set; }
         public ClaimPatient Patient { get; set; }
-        public List<ClaimPayer> PayerList { get; set; }
-        public List<ClaimPhysician> PhysicianList { get; set; }
+        public List<ClaimPayer> Payers { get; set; }
+        public List<ClaimPhysician> Physicians { get; set; }
         public ClaimProvider Provider { get; set; }
         public String[] ReasonsForVisit { get; set; }
         public ClaimResponsibleParty ResponsibleParty { get; set; }
-        public List<ClaimServiceLine> ServiceLineList { get; set; }
+        public List<ClaimServiceLine> ServiceLines { get; set; }
         public String[] TreatmentAuthCodes { get; set; }
-        public List<ClaimValueCode> ValueCodeList { get; set; }
+        public List<ClaimValueCode> ValueCodes { get; set; }
     }
 }

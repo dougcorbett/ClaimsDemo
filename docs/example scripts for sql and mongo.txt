@@ -1,0 +1,45 @@
+--- hero examples
+use superheroes
+
+db.hero.insert({"superName": "Mr. Incredible", "realName": "Bob Parr", "powers" : [ "strength", "durability" ] } );
+
+db.hero.insertMany( [ 
+{"superName": "Elastigirl", "realName": "Helen Parr", "powers" : [ "resourceful", "stretchiness", "dexterity" ] }, {"superName": "Violet", "realName": "Violet Parr", "powers" : [ "force-fields", "invisibility" ] }, 
+{"superName": "Dash", "realName": "Dashiell Parr", "powers" : [ "speed" ] } , 
+{"superName": "Jack Jack", "realName": "Jack Jack Parr", "powers" : [ "shapeshifting", "giggles" ] } , 
+{"superName": "Frozone", "realName": "Lucius Best", "powers" : [ "freeze ray" ] } , 
+{"superName": "Syndrome", "realName": "Buddy Pine", "powers" : [ "inventiveness" ] } 
+] );
+
+db.hero.find({}).pretty()
+
+db.hero.find({ "powers" : "shapeshifting"}).pretty()
+
+db.hero.find({"superName": "Mr. Incredible"}).pretty()
+
+db.hero.update({"superName": "Mr. Incredible"}, { $set: { "superName": "Bobby" }}, { multi: true })
+
+db.hero.find({_id: ObjectId("5a19badfe8e329c85a780178")}).pretty()
+db.hero.find({_id: "5a19badfe8e329c85a780178"}).pretty()
+db.hero.find({"superName": "Bobby"}).pretty()
+
+db.hero.remove({"superName": "Bobby"})
+
+db.hero.drop()
+
+---- claim examples
+
+use ClaimDB
+
+-- simple query
+db.claims.find({_id: ObjectId("5a18db25406a75596c8bd115")})
+
+-- Two table query
+-- Three table query
+not really one.  In some cases it is not needed.  When it is and you want to relate documents from two or mor collections, you will have to do it yourself in javascript or c#.
+
+-- get claim id with predicates on two joined tables
+db.claims.find({ "ServiceLines.RevenueCode": "0120", "ICDDiagnosisCodes.Code": "6141" }).pretty()
+
+-- simple aggregation query
+db.claims.aggregate([ { $group: { _id:"$Patient.Name", num_claims:{$sum:1} } } ])

@@ -48,7 +48,7 @@ namespace ClaimsDemo.DataAccess.TestClaims
             EmployerNames = new string[] { "Mom and pop company" };
             ExternalCausesOfInjury = new string[] { "s1" };
 
-            ICDDiagnosisCodeList = new List<ClaimICDDiagnosisCode>()
+            ICDDiagnosisCodes = new List<ClaimICDDiagnosisCode>()
             {
                 new ClaimICDDiagnosisCode() { Code = "6178", PresentOnAdmissionIndicator = "Y"},
                 new ClaimICDDiagnosisCode() { Code = "6146", PresentOnAdmissionIndicator = "Y"},
@@ -56,14 +56,14 @@ namespace ClaimsDemo.DataAccess.TestClaims
                 new ClaimICDDiagnosisCode() { Code = "6206", PresentOnAdmissionIndicator = "Y"}
             };
 
-            ICDProcedureCodeList = new List<ClaimICDProcedureCode>()
+            ICDProcedureCodes = new List<ClaimICDProcedureCode>()
             {
                 new ClaimICDProcedureCode() { IsPrimary = true, Code = "6564", ProcedureDate = new DateTime(2007, 12, 9) },
                 new ClaimICDProcedureCode() { IsPrimary = false, Code = "5459", ProcedureDate = new DateTime(2007, 12, 9) },
                 new ClaimICDProcedureCode() { IsPrimary = false, Code = "5759", ProcedureDate = new DateTime(2007, 12, 9) }
             };
 
-            InsuredList = new List<ClaimInsured>()
+            Insureds = new List<ClaimInsured>()
             {
                 new ClaimInsured()
                 {
@@ -75,12 +75,12 @@ namespace ClaimsDemo.DataAccess.TestClaims
                 }
             };
 
-            OccurenceList = new List<ClaimOccurence>()
+            Occurences = new List<ClaimOccurence>()
             {
                 new ClaimOccurence() { Code = "23", Date = new DateTime(2007, 3, 12) }
             };
 
-            OccurenceSpanList = new List<ClaimOccurenceSpan>()
+            OccurenceSpans = new List<ClaimOccurenceSpan>()
             {
                 new ClaimOccurenceSpan() { Code = "12", FromDate = new DateTime(2007, 3, 1), ThroughDate = new DateTime(2007, 3, 4) }
             };
@@ -97,7 +97,7 @@ namespace ClaimsDemo.DataAccess.TestClaims
                 Gender = "F",
             };
 
-            PayerList = new List<ClaimPayer>()
+            Payers = new List<ClaimPayer>()
             {
                 new ClaimPayer()
                 {
@@ -111,7 +111,7 @@ namespace ClaimsDemo.DataAccess.TestClaims
                 }
             };
 
-            PhysicianList = new List<ClaimPhysician>()
+            Physicians = new List<ClaimPhysician>()
             {
                 new ClaimPhysician()
                 {
@@ -153,7 +153,7 @@ namespace ClaimsDemo.DataAccess.TestClaims
                 Zip = "29381"
             };
 
-            ServiceLineList = new List<ClaimServiceLine>()
+            ServiceLines = new List<ClaimServiceLine>()
             {
                 new ClaimServiceLine()
                 {
@@ -239,7 +239,7 @@ namespace ClaimsDemo.DataAccess.TestClaims
 
             TreatmentAuthCodes = new string[] { "12312344" };
 
-            ValueCodeList = new List<ClaimValueCode>() {
+            ValueCodes = new List<ClaimValueCode>() {
                 new ClaimValueCode() {  Amount = 3, Code = "30"}
             };
         }
